@@ -29,6 +29,7 @@ public class PermissionConfig {
     // 权限请求码
     private static final int REQUEST_ALL_PERMISSTIONS = 0x0001;
 
+    
     // Andoird 6.0系统以上，需要动态申请的权限添加到该数组中
     private static String[] mPermissions = new String[]{
             Manifest.permission.READ_PHONE_STATE,
