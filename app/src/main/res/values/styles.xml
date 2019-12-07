@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--无标题-->
+    <!--此主题可以在AppCompatActivity上去掉标题栏-->
+    <style name="AppNoTitleTheme" parent="@style/AppTheme">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>

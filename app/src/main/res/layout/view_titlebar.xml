@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#ffffffff"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_forward"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff4a90e2"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+</RelativeLayout>
