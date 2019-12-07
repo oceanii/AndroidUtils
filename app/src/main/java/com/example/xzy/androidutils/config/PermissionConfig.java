@@ -39,6 +39,7 @@ public class PermissionConfig {
             Manifest.permission.RECORD_AUDIO
     };
 
+    
     // 声明一个集合，用来存储用户拒绝授权的权限
     private static List<String> mPermissionDeniedList = new ArrayList<String>();
 
