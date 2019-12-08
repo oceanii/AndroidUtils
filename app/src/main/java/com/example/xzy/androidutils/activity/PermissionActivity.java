@@ -1,13 +1,18 @@
 package com.example.xzy.androidutils.activity;
 
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 
 import com.example.xzy.androidutils.R;
 import com.example.xzy.androidutils.baseactivity.BaseActivity;
 import com.example.xzy.androidutils.baseactivity.TitleBar;
+import com.example.xzy.androidutils.config.PermissionConfig;
 
-public class PermissionActivity extends BaseActivity {
+import java.util.List;
+
+public class PermissionActivity extends BaseActivity implements PermissionConfig.PermissionCallbacks{
     private static final String TAG = "PermissionActivity";
     private TitleBar mTitleBar;
     @Override
@@ -45,11 +50,32 @@ public class PermissionActivity extends BaseActivity {
 
     @Override
     protected void initData() {
-
+        PermissionConfig.requestPermmissions(this, this, PermissionConfig.REQUEST_ALL_PERMISSTIONS_FLAG, PermissionConfig.mPermissions);
     }
 
     @Override
     protected void initListener() {
 
+    }
+
+    @Override
+    public void onPermissionsAllHas(int requestCode) {
+        Log.d(TAG, "onPermissionsAllHas: ");
+    }
+
+    @Override
+    public void onPermissionGranted(int requestCode, @NonNull List<String> permissions) {
+        Log.d(TAG, "onPermissionGranted: " + permissions.size());
+    }
+
+    @Override
+    public void onPermissionDenied(int requestCode, @NonNull List<String> permissions) {
+        Log.d(TAG, "onPermissionDenied: " + permissions.size());
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        PermissionConfig.onRequestPermissionResult(this, requestCode, permissions, grantResults);
     }
 }

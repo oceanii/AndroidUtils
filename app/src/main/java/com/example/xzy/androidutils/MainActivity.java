@@ -4,8 +4,6 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.xzy.androidutils.config.PermissionConfig;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,7 +11,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        PermissionConfig.initCheckAllPermission(this);
 
     }
 
@@ -21,6 +18,5 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        PermissionConfig.onRequestPermissionsResult(this, requestCode, permissions, grantResults);
     }
 }
