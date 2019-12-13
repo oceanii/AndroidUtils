@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.xzy.androidutils">
+    package="com.oceanii.androidutils">
 
     <!-- 获取手机识别码IMEI -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -24,10 +24,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppNoTitleTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.oceanii.androidutils.MainActivity">
 
         </activity>
-        <activity android:name=".activity.PermissionActivity">
+        <activity android:name="com.oceanii.androidutils.activity.PermissionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,4 +1,4 @@
-package com.example.xzy.androidutils.config;
+package com.oceanii.androidutils.config;
 
 import android.Manifest;
 import android.app.Activity;
@@ -8,14 +8,13 @@ import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
- * Created by xzy on 2019/12/7.
+ * Created by oceanii on 2019/12/7.
  */
 
 public class PermissionConfig {

@@ -1,14 +1,13 @@
-package com.example.xzy.androidutils.activity;
+package com.oceanii.androidutils.activity;
 
 import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 
-import com.example.xzy.androidutils.R;
-import com.example.xzy.androidutils.baseactivity.BaseActivity;
-import com.example.xzy.androidutils.baseactivity.TitleBar;
-import com.example.xzy.androidutils.config.PermissionConfig;
+import com.oceanii.androidutils.R;
+import com.oceanii.androidutils.baseactivity.BaseActivity;
+import com.oceanii.androidutils.baseactivity.TitleBar;
+import com.oceanii.androidutils.config.PermissionConfig;
 
 import java.util.List;
 

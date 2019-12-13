@@ -1,11 +1,11 @@
-package com.example.xzy.androidutils.baseactivity;
+package com.oceanii.androidutils.baseactivity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by xzy on 2019/12/1.
+ * Created by oceanii on 2019/12/1.
  */
 
 public abstract class BaseActivity extends AppCompatActivity{

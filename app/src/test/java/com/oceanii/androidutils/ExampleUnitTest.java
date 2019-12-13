@@ -1,4 +1,4 @@
-package com.example.xzy.androidutils;
+package com.oceanii.androidutils;
 
 import org.junit.Test;
 

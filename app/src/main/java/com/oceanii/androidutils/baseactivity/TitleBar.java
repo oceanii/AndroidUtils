@@ -1,4 +1,4 @@
-package com.example.xzy.androidutils.baseactivity;
+package com.oceanii.androidutils.baseactivity;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
@@ -7,14 +7,13 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.xzy.androidutils.R;
+import com.oceanii.androidutils.R;
 
 /**
- * Created by xzy on 2019/12/1.
+ * Created by oceanii on 2019/12/1.
  */
 
 public class TitleBar extends RelativeLayout implements View.OnClickListener{

@@ -1,4 +1,4 @@
-package com.example.xzy.androidutils;
+package com.oceanii.androidutils;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
