@@ -75,6 +75,6 @@ public class PermissionActivity extends BaseActivity implements PermissionConfig
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        PermissionConfig.onRequestPermissionResult(this, requestCode, permissions, grantResults);
+        PermissionConfig.onRequestPermissionsResult(this, requestCode, permissions, grantResults);
     }
 }

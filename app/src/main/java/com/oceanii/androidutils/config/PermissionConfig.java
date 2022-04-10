@@ -28,8 +28,8 @@ public class PermissionConfig {
             Manifest.permission.RECORD_AUDIO
     };
 
+    public static final int REQUEST_ALL_PERMISSTIONS_FLAG = 0X0001;
     public static int mRequestCode;
-    public static int REQUEST_ALL_PERMISSTIONS_FLAG = 0X0001;
     public static PermissionCallbacks mPermissionCallbacks;
 
     public interface PermissionCallbacks extends ActivityCompat.OnRequestPermissionsResultCallback{
@@ -72,7 +72,7 @@ public class PermissionConfig {
         }
     }
 
-    public static void onRequestPermissionResult(@NonNull Activity activity, int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){
+    public static void onRequestPermissionsResult(@NonNull Activity activity, int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults){
         if(mRequestCode == requestCode){
             List<String> deniedPermissions = new ArrayList<>();
             List<String> grantedPermissions = new ArrayList<>();
